@@ -2,7 +2,8 @@
 pragma solidity ^0.8.0;
 
 contract RentPay {
-    address public owner;
+    //State variables
+    address public owner; //Owner of the contract
     mapping(address => uint256) public balances;
     mapping(address => uint256) public lockedFunds;
     mapping(address => uint256) public autosavePercentage;
