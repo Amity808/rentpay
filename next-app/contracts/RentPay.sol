@@ -47,17 +47,20 @@ contract RentPay {
         emit FundLocked(msg.sender, amount);
     }
 
+    // Function to configure autosave
     function configureAutosave(uint256 percentage) external {
         require(percentage <= 100, "Percentage must be less than or equal to 100");
         autosavePercentage[msg.sender] = percentage;
         emit AutosaveConfigured(msg.sender, percentage);
     }
 
+    // Function for external contribution
     function contribute(address tenant) external payable {
         contributions[tenant][msg.sender] += msg.value;
         emit ContributionReceived(msg.sender, tenant, msg.value);
     }
 
+    // Function to withdraw funds
     function withdraw() external {
         uint256 amount = balances[msg.sender] + lockedFunds[msg.sender];
         require(amount > 0, "No funds to withdraw");
@@ -66,6 +69,7 @@ contract RentPay {
         payable(msg.sender).transfer(amount);
     }
 
+    // Function to withdraw contributions
     function withdrawContributions() external {
         uint256 amount = contributions[msg.sender][msg.sender];
         require(amount > 0, "No contributions to withdraw");
