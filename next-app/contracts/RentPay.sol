@@ -4,10 +4,10 @@ pragma solidity ^0.8.0;
 contract RentPay {
     //State variables
     address public owner; //Owner of the contract
-    mapping(address => uint256) public balances;
-    mapping(address => uint256) public lockedFunds;
-    mapping(address => uint256) public autosavePercentage;
-    mapping(address => mapping(address => uint256)) public contributions;
+    mapping(address => uint256) public balances; // Mapping to track balances of tenants
+    mapping(address => uint256) public lockedFunds; //Mapping to track locked funds of tenants
+    mapping(address => uint256) public autosavePercentage; // Mapping to track autosave percentage of tenants
+    mapping(address => mapping(address => uint256)) public contributions; // Mapping to track contributions from external sources
 
     event RentPaid(address indexed tenant, uint256 amount);
     event UtilitiesPaid(address indexed tenant, uint256 amount);
