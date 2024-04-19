@@ -9,12 +9,14 @@ contract RentPay {
     mapping(address => uint256) public autosavePercentage; // Mapping to track autosave percentage of tenants
     mapping(address => mapping(address => uint256)) public contributions; // Mapping to track contributions from external sources
 
+    // Events
     event RentPaid(address indexed tenant, uint256 amount); // Event emitted when rent is paid
     event UtilitiesPaid(address indexed tenant, uint256 amount); // Event emitted when utilities are paid
     event FundLocked(address indexed tenant, uint256 amount); // Event emitted when funds are locked
     event AutosaveConfigured(address indexed tenant, uint256 percentage); // Event emitted when autosave is configured
     event ContributionReceived(address indexed contributor, address indexed tenant, uint256 amount); // Event emitted when contribution is received
 
+    // Constructor
     constructor() {
         owner = msg.sender; // Assign contract deployer as owner
     }
@@ -66,7 +68,8 @@ contract RentPay {
         require(amount > 0, "No funds to withdraw");
         balances[msg.sender] = 0;
         lockedFunds[msg.sender] = 0;
-        payable(msg.sender).transfer(amount);
+        (bool success, ) = payable(msg.sender).call{value: amount}("");
+        require(success, "Transfer failed");
     }
 
     // Function to withdraw contributions
@@ -74,6 +77,7 @@ contract RentPay {
         uint256 amount = contributions[msg.sender][msg.sender];
         require(amount > 0, "No contributions to withdraw");
         contributions[msg.sender][msg.sender] = 0;
-        payable(msg.sender).transfer(amount);
+        (bool success, ) = payable(msg.sender).call{value: amount}("");
+        require(success, "Transfer failed");
     }
 }
