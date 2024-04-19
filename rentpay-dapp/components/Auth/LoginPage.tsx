@@ -7,7 +7,16 @@ const LoginPage: React.FC = () => {
     email: '',
     password: ''
   });
-    
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+  
+
   return (
     <div>
       <h1>Login Page</h1>
