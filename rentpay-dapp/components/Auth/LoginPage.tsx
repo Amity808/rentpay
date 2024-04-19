@@ -15,7 +15,15 @@ const LoginPage: React.FC = () => {
       [name]: value
     }));
   };
-  
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // logic to handle login here
+    console.log('Login form submitted:', formData);
+    // Reset form data after submission
+    setFormData({ email: '', password: '' });
+  };
+
 
   return (
     <div>
