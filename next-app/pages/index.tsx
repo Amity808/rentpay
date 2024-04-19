@@ -24,6 +24,37 @@ export default function Home() {
      
 
       <div className="flex flex-col justify-center items-center">
+
+<div className="bg-white rounded-lg shadow-md overflow-hidden">
+      {/* House Image */}
+      <img
+        src="/house-image.jpg"
+        alt="House"
+        className="w-full h-64 object-cover"
+      />
+      {/* House Details */}
+      <div className="p-4">
+        <h2 className="text-xl font-semibold text-gray-800 mb-2">
+          Beautiful House in a Serene Location
+        </h2>
+        <p className="text-sm text-gray-600 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          sagittis augue nec ligula viverra, sit amet lacinia odio suscipit.
+          Nulla facilisi.
+        </p>
+        {/* Buttons */}
+        <div className="flex justify-between">
+          {/* View Details Button */}
+          <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+            View Details
+          </button>
+          {/* Contact Agent Button */}
+          <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-green-400">
+            Contact Agent
+          </button>
+        </div>
+      </div>
+    </div>
         
         
 
