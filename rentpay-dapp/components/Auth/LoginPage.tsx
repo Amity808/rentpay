@@ -15,12 +15,42 @@ const LoginPage: React.FC = () => {
       [name]: value
     }));
   };
-  
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // logic to handle login here
+    console.log('Login form submitted:', formData);
+    // Reset form data after submission
+    setFormData({ email: '', password: '' });
+  };
+
 
   return (
     <div>
-      <h1>Login Page</h1>
-      {/* Login form*/}
+      <h2>Login</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <button type="submit">Login</button>
+      </form>
     </div>
   );
 }
