@@ -89,6 +89,6 @@ contract RentPay {
         contributions[msg.sender][msg.sender] =
      
         
-      
+        emit Withdrawal(msg.sender, amount, "ETH");
     }
 }
