@@ -73,7 +73,6 @@ contract RentPay {
         uint256 totalAmount;
         if (keccak256(abi.encodePacked(asset)) == keccak256(abi.encodePacked("ETH"))) {
             totalAmount = balances[msg.sender] + lockedFunds[msg.sender];
-            require(totalAmount >= amount, "Insufficient balance");
             
             payable(msg.sender).transfer(amount);
         } else {
