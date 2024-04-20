@@ -87,7 +87,7 @@ contract RentPay {
         uint256 amount = contributions[msg.sender][msg.sender];
         require(amount > 0, "No contributions to withdraw");
         contributions[msg.sender][msg.sender] = 0;
-     
+        (bool success, ) = payable(msg.sender).call{value: amount}("");
         
         emit Withdrawal(msg.sender, amount, "ETH");
     }
