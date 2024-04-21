@@ -11,26 +11,16 @@ module.exports = {
         },
         celo: {
             url: "https://forno.celo.org",
-            accounts: {
-                PRIVATE_KEY: process.env.PRIVATE_KEY,
-                path: "m/44'/52752'/0'/0"
-            },
-            chainId: 42220
+            accounts: [process.env.PRIVATE_KEY],
         },
     },
     solidity: {
-        version: "0.8.0", // Solidity compiler version
+        version: "0.8.17", // Solidity compiler version
         settings: {
             optimizer: {
                 enabled: true,
                 runs: 200
             }
         }
-    },
-    paths: {
-        sources: "./contracts",
-        tests: "./test",
-        cache: "./cache",
-        artifacts: "./artifacts"
     },
 };
