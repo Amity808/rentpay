@@ -1,33 +1,26 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
+const { MNEMONIC, PRIVATE_KEY } = require('./.env');
+
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-    solidity: "0.8.0",
     networks: {
-        hardhat: [],
+        hardhat: {
+            chainId: 31337
+        },
         celo: {
             url: "https://forno.celo.org",
-            accounts: {
-                PRIVATE_KEY: process.env.PRIVATE_KEY,
-                path: "m/44'/52752'/0'/0"
-            },
-            chainId: 42220
+            accounts: [process.env.PRIVATE_KEY],
         },
     },
-    etherscan: {
-        apiKey: {
-            celo: process.env.CELOSCAN_API_KEY,
-        },
-        customChains: [
-            {
-                network: "celo",
-                chainId: 42220,
-                urls: {
-                    apiURL: "https://api.celoscan.io/api",
-                    browserURL: "https://celoscan.io/",
-                },
-            },
-        ],
+    solidity: {
+        version: "0.8.17", // Solidity compiler version
+        settings: {
+            optimizer: {
+                enabled: true,
+                runs: 200
+            }
+        }
     },
 };
