@@ -1,16 +1,18 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
 
-.env
+CONTRACT_ADDRESS=0xefe65a10D5Aa33CEdA0A7547EF71345bd98B2Faf 
+
+/.env
+
 # testing
 /coverage
 
 # next.js
-.next/
+/.next
 /out/
 
 # production
