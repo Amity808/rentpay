@@ -4,7 +4,7 @@
 /.pnp
 .pnp.js
 
-CONTRACT_ADDRESS=0xefe65a10D5Aa33CEdA0A7547EF71345bd98B2Faf 
+
 
 /.env
 
@@ -12,8 +12,8 @@ CONTRACT_ADDRESS=0xefe65a10D5Aa33CEdA0A7547EF71345bd98B2Faf
 /coverage
 
 # next.js
-/.next
-/out/
+.next/
+out/
 
 # production
 /build
