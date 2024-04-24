@@ -56,6 +56,25 @@
 RentPay transforms African rental markets by easing upfront annual rent burdens with secure MiniPay transactions and budget-friendly saving tools. #DigitalRenting #FinancialInclusion
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+**Problem Statement:**
+Rent payment challenges are a widespread issue globally, with tenants often struggling to manage large upfront payments and secure financial transactions. However, these challenges are particularly acute in Africa, where landlords frequently require up to a year's rent upfront—a significant financial burden that many cannot afford (BBC News, 2022). Moreover, with over 350 million adults in Africa without access to traditional banking services, a substantial portion of the population is effectively excluded from the rental market. This backdrop makes Africa an ideal starting point for RentPay, especially given the high usage of the Opera browser and its integrated MiniPay service, which are well-positioned to deliver digital solutions in this market.
+
+**Objective:**
+The objective of RentPay is to revolutionize the rental process by making it more accessible, secure, and user-friendly. Using cutting-edge technology, RentPay aims to facilitate easier, more flexible payment options, enhance the transparency and security of rental transactions, and ultimately improve housing accessibility and affordability across Africa. While the long-term vision is global, the initial focus on Africa leverages existing digital habits to effectively address these specific challenges.
+
+**Methodology:**
+- Digital Payments Integration: Utilize MiniPay within the Opera browser to enable secure, straightforward digital rent and utility payments, offering an alternative to traditional banking infrastructures.
+
+- Smart Contracts: Implement blockchain-based smart contracts to automate rental payments and agreement enforcement, ensuring transactions are transparent, secure, and efficient.
+
+- Digital Identities: Develop a system for digital identities that securely validates and stores tenant and landlord information, streamlining the screening and verification processes.
+Savings and Budgeting Tools: Introduce locked savings accounts within MiniPay, enabling tenants to incrementally save towards their rent and utilities, fostering better financial management
+
+**Scope of the Solution:**
+RentPay is targeted initially at the African rental market, focusing on urban areas with high digital engagement to refine the platform. The solution is designed to be scalable, with potential future expansion into rural areas and other global markets.
+
+
+
 ## Built With
 
 To give tenants a simple, safe, and comprehensive way to handle their rent and utilities, RentPay is designed as a decentralized application (dApp) that makes use of a number of 
