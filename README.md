@@ -73,6 +73,25 @@ Savings and Budgeting Tools: Introduce locked savings accounts within MiniPay, e
 **Scope of the Solution:**
 RentPay is targeted initially at the African rental market, focusing on urban areas with high digital engagement to refine the platform. The solution is designed to be scalable, with potential future expansion into rural areas and other global markets.
 
+**Key Features:**
+- Rent and Utility Payment through MiniPay:
+Rent and utility payments can be easily made by users using the MiniPay wallet in the Opera Mini browser.
+It is no longer necessary to use traditional banking services thanks to this function, which provides a safe and convenient payment option.
+
+- Locked Savings Account for Budgeting:
+Tenants might choose to set aside a certain amount of money for utilities and rent only.
+Tenants may successfully manage their budget and guarantee on-time rent payments with the support of this locked savings account that allows for incremental increases.
+
+- Budget-Friendly Autosave Option:
+MiniPay has an autosave function that lets renters set aside a certain portion of their income for their rental contract account.
+This function, which progressively accumulates money for rent payments, encourages saving discipline.
+
+- External Contributions:
+A tenant's MiniPay rent and utility fund can be directly funded by friends, family, or other donors.
+This feature gives tenants more flexibility and financial help, which improves their capacity to fulfill their responsibilities.
+
+**Conclusion:**
+We encourage financial responsibility and transparency by providing tenants with a contemporary and effective platform to manage their utilities and rent. We hope to streamline the rental payment process and enhance tenants' overall financial well-being by utilising cutting-edge technologies and intuitive interfaces.
 
 
 ## Built With
