@@ -99,17 +99,6 @@ We encourage financial responsibility and transparency by providing tenants with
 To give tenants a simple, safe, and comprehensive way to handle their rent and utilities, RentPay is designed as a decentralized application (dApp) that makes use of a number of 
 different technologies. Among the major technologies employed in this project are:
 
-- [Next.js](https://nextjs.org/): utilised as the front-end foundation for creating the application's user interface. Server-side rendering, routing, and other functionality are provided by Next.js, which improves the application's performance and user experience.
-- [Celo](https://celo.org/)
-- [Solidity](https://docs.soliditylang.org/en/v0.8.19/): Usedd for writing our smart contract
-- [React.js](https://reactjs.org/): Front end library which our Next.js app is going to be built on
-- [Tailwind CSS](https://v2.tailwindcss.com/docs): Used in the styling of the UI components. Tailwind CSS is a utility-first approach to CSS that makes it possible to quickly design and modify user interface elements.
-- [Hardhat](https://hardhat.org/hardhat-runner/docs/config): Selected as the platform for development where smart contracts are assembled, tested, and implemented. For Ethereum development, Hardhat provides an extensive toolkit with integrated testing and debugging help.
-- [Viem](https://viem.sh/): Utilised to control Ethereum interactions within the application and wallet connections. Viem provides tools for managing Ethereum addresses, approving trades, and getting blockchain information.
-- [Ethers.js](https://docs.ethers.org/v6/): Utilised to communicate with the Ethereum network. A JavaScript package called ethers.js offers APIs for communicating with smart contracts, sending transactions, and retrieving blockchain data.
-- [Rainbowkit-celo](https://github.com/celo-org/rainbowkit-celo): Employed in the creation of UI components. In order to expedite development and guarantee consistency in design, Rainbowkit offers a set of pre-designed components that are readily integrated into the application.
-- [TypeChain](https://www.npmjs.com/package/typechain): Generated TypeScript bindings for Ethereum smart contracts using this. In TypeScript projects, TypeChain helps to maintain type safety and offers auto-generated typings for interfacing with smart contracts.
-  
 These technologies work together smoothly to produce a decentralised application that is reliable and effective and satisfies RentPay users' needs.
 
 
@@ -158,40 +147,54 @@ By following these steps and maintaining a collaborative and iterative developme
 
 ### Front-end framework
 
+- [Next.js](https://nextjs.org/): utilised as the front-end foundation for creating the application's user interface. Server-side rendering, routing, and other functionality are provided by Next.js, which improves the application's performance and user experience.
+- [React.js](https://reactjs.org/): Front end library which our Next.js app is going to be built on
+- [Tailwind CSS](https://v2.tailwindcss.com/docs): Used in the styling of the UI components. Tailwind CSS is a utility-first approach to CSS that makes it possible to quickly design and modify user interface elements.
+- [Viem](https://viem.sh/): Utilised to control Ethereum interactions within the application and wallet connections. Viem provides tools for managing Ethereum addresses, approving trades, and getting blockchain information.
+- [Rainbowkit-celo](https://github.com/celo-org/rainbowkit-celo): Employed in the creation of UI components. In order to expedite development and guarantee consistency in design, Rainbowkit offers a set of pre-designed components that are readily integrated into the application.
+
 ![Celo Composer select framework](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_1.png?raw=true)
+
 
 ### Web3 library (for react-app)
 
-![Celo Composer select framework](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_2.png?raw=true)
+- [Ethers.js](https://docs.ethers.org/v6/): Utilised to communicate with the Ethereum network. A JavaScript package called ethers.js offers APIs for communicating with smart contracts, sending transactions, and retrieving blockchain data.
+  
+- [Hardhat](https://hardhat.org/hardhat-runner/docs/config): Selected as the platform for development where smart contracts are assembled, tested, and implemented. For Ethereum development, Hardhat provides an extensive toolkit with integrated testing and debugging help.
+  
+- [Celo Blockchain - Mainnet](https://docs.celo.org/network/mainnet): Celo Blockchain Mainnet is the main network of the Celo blockchain, a decentralized platform focused on making financial tools accessible to anyone with a mobile phone or web.
+- [MiniPay SDK - SDK ](https://docs.celo.org/developer/build-on-minipay/overview)for interacting with MiniPay for rent and utilities payments]
 
+  
 ### Smart contract framework
 
-![Celo Composer tool selection](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_3.png?raw=true)
+- [Solidity](https://docs.soliditylang.org/en/v0.8.19/): Used for writing our smart contract
 
-### Subgraph
+- [TypeChain](https://www.npmjs.com/package/typechain): Generated TypeScript bindings for Ethereum smart contracts using this. In TypeScript projects, TypeChain helps to maintain type safety and offers auto-generated typings for interfacing with smart contracts.
+  
 
-![Celo Composer subgraph support](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_4.png?raw=true)
+### Rentpay dApp
 
-### Name your dApp
+[picture]
 
-![Celo Composer dApp name](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_5.png?raw=true)
-
-**_🔥Voila, you have a dApp ready to go. Voila, you have a dApp ready to go. Start building your dApp on Celo._**
 
 ### Getting started
- Clone the Repository:
+
+To run the deployed version of our Rentpay-Dapp follow the instruction and Documentation below
+ 
+**Clone the Repository:**
 
 - Make sure your computer has both Node.js and npm (Node Package Manager) installed. The official Node.js website has them available for download and installation.
 - Install an Ethereum wallet that works with it (like MetaMask), and make sure the account has enough money in it to run smart contracts and use the app.
 
-git clone <repository_url>
+`git clone <repository_url>`
 Clone the RentPay repository from the source control system (e.g., GitHub) to your local machine.
 
-Install Dependencies:
+- Install Dependencies:
 Hyper terminal
 
-cd rentpay-dapp
-npm install
+`cd rentpay-dapp`
+`npm install`
 
 Navigate to the project directory and install the necessary dependencies for both the frontend and backend components of the application.
 
@@ -199,22 +202,22 @@ Navigate to the project directory and install the necessary dependencies for bot
 
 .env file 
 
-MNEMONIC="<your_wallet_mnemonic>"
-PRIVATE_KEY="<your_private_key>"
-CELOSCAN_API_KEY="<your_celoscan_api_key>"
-Replace <your_wallet_mnemonic>, <your_private_key>, and <your_celoscan_api_key> with your actual values. You can refer to the provided .env.example file for guidance.
+`MNEMONIC="<your_wallet_mnemonic>"`
+`PRIVATE_KEY="<your_private_key>"`
+`CELOSCAN_API_KEY="<your_celoscan_api_key>"`
+Replace `<your_wallet_mnemonic>`, `<your_private_key>`, and `<your_celoscan_api_key>` with your actual values. You can refer to the provided `.env.example` file for guidance.
 
 5. Compile Smart Contracts:
 
-cd smart_contracts
-npm install
+`cd smart_contracts`
+`npm install`
 
-npx hardhat compile
+`npx hardhat compile`
 Compile the smart contracts located in the contracts directory. Ensure the contracts are error-free and successfully compiled before proceeding.
 
 6. Deploy Smart Contracts:
 
-npx hardhat run scripts/deploy.js --network celo
+`npx hardhat run scripts/deploy.js --network celo`
 
 Execute the deployment script to deploy the compiled smart contracts to the Celo mainnet blockchain. 
 
@@ -222,9 +225,9 @@ Verify that the deployment process completes without errors and note the contrac
 
 7. Start Next.js Server:
 
-npm run dev
+`npm run dev`
 
-Start the Next.js server to launch the development server and host the RentPay frontend application locally. Access the application by navigating to http://localhost:3000 in your web browser.
+Start the `Next.js server` to launch the development server and host the RentPay frontend application locally. Access the application by navigating to http://localhost:3000 in your web browser.
 
 8. Interact with the Application:Use the RentPay dApp to manage rent and utilities payments, configure autosave options, lock funds for budgeting, and receive contributions from external sources. Ensure that you have a compatible Ethereum wallet connected to the application for transactions and interactions with the blockchain.
 
@@ -234,57 +237,8 @@ Start the Next.js server to launch the development server and host the RentPay f
 
 11. Documentation and Support:Document the deployment process, application features, and troubleshooting steps for future reference. Provide adequate support and resources to users for onboarding and using the RentPay dApp effectively.
 
-
 By following these instructions, you can successfully deploy, test, and interact with the RentPay decentralized application, providing users with a seamless and secure platform for managing their rent and utilities payments.
 
-### React
-
-- Support for Website and Progressive Web Application.
-- Works with all major crypto wallets.
-
-Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/react-app/README.md) to learn more about.
-
-### React Native
-
-- Out of the box config, just focus on buidl.
-- Support for Android and IOS.
-- Works with and without [Expo](https://expo.dev/).
-- Working example app included.
-
-Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/react-native-app/README.md) to learn more about.
-
-### Flutter
-
-- One command to get started - Type `flutter run` to start development in your mobile phone.
-- Works with all major mobile crypto wallets.
-- Support for Android, IOS (Web, Windows, and Linux coming soon).
-- Working example app included.
-
-Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/flutter-app/README.md) to learn more about.
-
-### Angular
-
-- Support for Website and Progressive Web Application.
-- Works with all major crypto wallets.
-
-Check [package readme](https://github.com/celo-org/celo-composer/blob/main/packages/angular-app/README.md) to learn more about.
-
-<!-- USAGE EXAMPLES -->
-
-## 🔭 Learning Solidity
-
-📕 Read the docs: <https://docs.soliditylang.org>
-
-- [Primitive Data Types](https://solidity-by-example.org/primitives/)
-- [Mappings](https://solidity-by-example.org/mapping/)
-- [Structs](https://solidity-by-example.org/structs/)
-- [Modifiers](https://solidity-by-example.org/function-modifier/)
-- [Events](https://solidity-by-example.org/events/)
-- [Inheritance](https://solidity-by-example.org/inheritance/)
-- [Payable](https://solidity-by-example.org/payable/)
-- [Fallback](https://solidity-by-example.org/fallback/)
-
-📧 Learn the [Solidity globals and units](https://solidity.readthedocs.io/en/v0.8.19/units-and-global-variables.html)
 
 ## Support
 
