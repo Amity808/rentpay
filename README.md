@@ -37,7 +37,7 @@
 ## About The Project
 
 RentPay transforms African rental markets by easing upfront annual rent burdens with secure MiniPay transactions and budget-friendly saving tools. #DigitalRenting #FinancialInclusion
-<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 **Problem Statement:**
 Rent payment challenges are a widespread issue globally, with tenants often struggling to manage large upfront payments and secure financial transactions. However, these challenges are particularly acute in Africa, where landlords frequently require up to a year's rent upfront—a significant financial burden that many cannot afford (BBC News, 2022). Moreover, with over 350 million adults in Africa without access to traditional banking services, a substantial portion of the population is effectively excluded from the rental market. This backdrop makes Africa an ideal starting point for RentPay, especially given the high usage of the Opera browser and its integrated MiniPay service, which are well-positioned to deliver digital solutions in this market.
