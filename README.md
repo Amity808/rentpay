@@ -123,13 +123,66 @@ These technologies work together smoothly to produce a decentralised application
 - Git (v2.38 or higher)
 - Install an Ethereum wallet that works with it (like MetaMask), and make sure the account has enough money in it to run smart contracts and use the app.
 
-## How to use Celo Composer
+## How to RentPay dApp
 
-The easiest way to start with Celo Composer is using `@celo/celo-composer`. This CLI tool lets you quickly start building dApps on Celo for multiple frameworks, including React (with either react-celo or rainbowkit-celo), React Native (w/o Expo), Flutter, and Angular. To get started, just run the following command, and follow the steps:
+ Clone the Repository:
 
-```bash
-npx @celo/celo-composer@latest create
-```
+- Make sure your computer has both Node.js and npm (Node Package Manager) installed. The official Node.js website has them available for download and installation.
+- Install an Ethereum wallet that works with it (like MetaMask), and make sure the account has enough money in it to run smart contracts and use the app.
+
+git clone <repository_url>
+Clone the RentPay repository from the source control system (e.g., GitHub) to your local machine.
+
+Install Dependencies:
+Hyper terminal
+
+cd rentpay-dapp
+npm install
+
+Navigate to the project directory and install the necessary dependencies for both the frontend and backend components of the application.
+
+4. Configure Environment Variables:Create a .env file in the root directory of the project and set the required environment variables:
+
+.env file 
+
+MNEMONIC="<your_wallet_mnemonic>"
+PRIVATE_KEY="<your_private_key>"
+CELOSCAN_API_KEY="<your_celoscan_api_key>"
+Replace <your_wallet_mnemonic>, <your_private_key>, and <your_celoscan_api_key> with your actual values. You can refer to the provided .env.example file for guidance.
+
+5. Compile Smart Contracts:
+
+cd smart_contracts
+npm install
+
+npx hardhat compile
+Compile the smart contracts located in the contracts directory. Ensure the contracts are error-free and successfully compiled before proceeding.
+
+6. Deploy Smart Contracts:
+
+npx hardhat run scripts/deploy.js --network celo
+
+Execute the deployment script to deploy the compiled smart contracts to the Celo mainnet blockchain. 
+
+Verify that the deployment process completes without errors and note the contract addresses for future reference.
+
+7. Start Next.js Server:
+
+npm run dev
+
+Start the Next.js server to launch the development server and host the RentPay frontend application locally. Access the application by navigating to http://localhost:3000 in your web browser.
+
+8. Interact with the Application:Use the RentPay dApp to manage rent and utilities payments, configure autosave options, lock funds for budgeting, and receive contributions from external sources. Ensure that you have a compatible Ethereum wallet connected to the application for transactions and interactions with the blockchain.
+
+9. Test Functionality:Test various features and functionalities of the RentPay application, including making payments, locking funds, configuring autosave settings, and withdrawing contributions. Verify that transactions are executed correctly and that balances are updated accordingly.
+
+10. Feedback and Improvement:Provide feedback on the application's usability, performance, and user experience. Continuously monitor and improve the application based on user feedback and emerging requirements.
+
+11. Documentation and Support:Document the deployment process, application features, and troubleshooting steps for future reference. Provide adequate support and resources to users for onboarding and using the RentPay dApp effectively.
+
+By following these instructions, you can successfully deploy, test, and interact with the RentPay decentralized application, providing users with a seamless and secure platform for managing their rent and utilities payments.
+
+
 
 ### Front-end framework
 
@@ -230,15 +283,16 @@ Safeguarding user cash and confidential information has always been a difficulty
 
 Moving forward, the roadmap for RentPay includes:
 
-Enhanced User Features:
+- Enhanced User Features:
 introducing new features and updating the UI to improve usability and functionality (transaction history, notifications, account management, etc.).
 
-Scalability and Performance:
+- Scalability and Performance:
 Exploring solutions for optimizing performance and scalability, including layer 2 scaling solutions, gas fee optimizations, and network upgrades.
-Security Enhancements:
+
+- Security Enhancements:
 To reduce security risks and safeguard user assets, new security measures should be put in place, audits should be carried out often, and best practices should be followed.
 
-Community Engagement:
+- Community Engagement:
 Establishing a vibrant community around RentPay through initiatives for adoption, instruction, and rewards in order to get input for future enhancements.
 Through tackling these obstacles and adhering to the plan, RentPay hopes to establish itself as a preeminent decentralized platform for managing rent and utilities, offering users all around the world financial inclusion and empowerment.
 
