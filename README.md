@@ -4,23 +4,6 @@
  <h2 align="center">RentPay</h2>
  <p align="center">Build, deploy, and iterate quickly on decentralized applications using Celo.</p>
 </p>
-  <p align="center">
-    <a href="https://github.com/celo-org/celo-composer/graphs/stars">
-      <img alt="GitHub Contributors" src="https://img.shields.io/github/stars/celo-org/celo-composer?color=FCFF52" />
-    </a>
-    <a href="https://github.com/celo-org/celo-composer/graphs/contributors">
-      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/celo-org/celo-composer?color=E7E3D4" />
-    </a>
-    <a href="https://github.com/celo-org/celo-composer/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/celo-org/celo-composer?color=E7E3D4" />
-    </a>
-    <a href="https://github.com/celo-org/celo-composer/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/celo-org/celo-composer?color=E7E3D4" />
-    </a>
-    <a href="https://opensource.org/license/mit/">
-      <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-    </a>
-  </p>
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -205,11 +188,12 @@ By following these steps and maintaining a collaborative and iterative developme
 
 ![Rentpay](https://github.com/Amity808/rentpay/blob/main/rentpay-dapp/public/roberton.jpg)
 
+
 ### Getting started
 
 To run the deployed version of our Rentpay-Dapp follow the instruction and Documentation below
  
-**Clone the Repository:**
+1. Clone the Repository:
 
 - Make sure your computer has both Node.js and npm (Node Package Manager) installed. The official Node.js website has them available for download and installation.
 - Install an Ethereum wallet that works with it (like MetaMask), and make sure the account has enough money in it to run smart contracts and use the app.
@@ -217,7 +201,8 @@ To run the deployed version of our Rentpay-Dapp follow the instruction and Docum
 `git clone <repository_url>`
 Clone the RentPay repository from the source control system (e.g., GitHub) to your local machine.
 
-- Install Dependencies:
+
+2. Install Dependencies:
 Hyper terminal
 
 `cd rentpay-dapp`
@@ -225,7 +210,8 @@ Hyper terminal
 
 Navigate to the project directory and install the necessary dependencies for both the frontend and backend components of the application.
 
-4. Configure Environment Variables:Create a .env file in the root directory of the project and set the required environment variables:
+
+3. Configure Environment Variables:Create a .env file in the root directory of the project and set the required environment variables:
 
 .env file 
 
@@ -234,7 +220,8 @@ Navigate to the project directory and install the necessary dependencies for bot
 `CELOSCAN_API_KEY="<your_celoscan_api_key>"`
 Replace `<your_wallet_mnemonic>`, `<your_private_key>`, and `<your_celoscan_api_key>` with your actual values. You can refer to the provided `.env.example` file for guidance.
 
-5. Compile Smart Contracts:
+
+4. Compile Smart Contracts:
 
 `cd smart_contracts`
 `npm install`
@@ -242,7 +229,8 @@ Replace `<your_wallet_mnemonic>`, `<your_private_key>`, and `<your_celoscan_api_
 `npx hardhat compile`
 Compile the smart contracts located in the contracts directory. Ensure the contracts are error-free and successfully compiled before proceeding.
 
-6. Deploy Smart Contracts:
+
+5. Deploy Smart Contracts:
 
 `npx hardhat run scripts/deploy.js --network celo`
 
@@ -250,19 +238,24 @@ Execute the deployment script to deploy the compiled smart contracts to the Celo
 
 Verify that the deployment process completes without errors and note the contract addresses for future reference.
 
-7. Start Next.js Server:
+
+6. Start Next.js Server:
 
 `npm run dev`
 
 Start the `Next.js server` to launch the development server and host the RentPay frontend application locally. Access the application by navigating to http://localhost:3000 in your web browser.
 
-8. Interact with the Application:Use the RentPay dApp to manage rent and utilities payments, configure autosave options, lock funds for budgeting, and receive contributions from external sources. Ensure that you have a compatible Ethereum wallet connected to the application for transactions and interactions with the blockchain.
 
-9. Test Functionality:Test various features and functionalities of the RentPay application, including making payments, locking funds, configuring autosave settings, and withdrawing contributions. Verify that transactions are executed correctly and that balances are updated accordingly.
+7. Interact with the Application:Use the RentPay dApp to manage rent and utilities payments, configure autosave options, lock funds for budgeting, and receive contributions from external sources. Ensure that you have a compatible Ethereum wallet connected to the application for transactions and interactions with the blockchain.
 
-10. Feedback and Improvement:Provide feedback on the application's usability, performance, and user experience. Continuously monitor and improve the application based on user feedback and emerging requirements.
 
-11. Documentation and Support:Document the deployment process, application features, and troubleshooting steps for future reference. Provide adequate support and resources to users for onboarding and using the RentPay dApp effectively.
+8. Test Functionality:Test various features and functionalities of the RentPay application, including making payments, locking funds, configuring autosave settings, and withdrawing contributions. Verify that transactions are executed correctly and that balances are updated accordingly.
+
+
+9. Feedback and Improvement:Provide feedback on the application's usability, performance, and user experience. Continuously monitor and improve the application based on user feedback and emerging requirements.
+
+
+10. Documentation and Support:Document the deployment process, application features, and troubleshooting steps for future reference. Provide adequate support and resources to users for onboarding and using the RentPay dApp effectively.
 
 By following these instructions, you can successfully deploy, test, and interact with the RentPay decentralized application, providing users with a seamless and secure platform for managing their rent and utilities payments.
 
