@@ -213,6 +213,19 @@ Join the Celo Discord server at <https://chat.celo.org>. Reach out on the dedica
 
 <!-- ROADMAP -->
 
+## Challenges:
+
+Throughout the development process, several challenges were encountered, including:
+- Integration Complexity:
+Compatibility and synchronization issues arose when handling different technology integrations and guaranteeing smooth communication between frontend, backend, and blockchain components.
+
+- Smart Contract Deployment:
+Gas prices, transaction speeds, Solidity version, configuration, and network dependability had to be carefully taken into account when deploying smart contracts on the Ethereum network and setting up the network.
+
+- Security Considerations:
+Safeguarding user cash and confidential information has always been a difficulty, especially when it comes to Decentralised Finance (DeFi) apps. This includes secure coding techniques and smart contract auditing.
+
+
 ## Roadmap
 
 Moving forward, the roadmap for RentPay includes:
