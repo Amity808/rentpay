@@ -123,8 +123,33 @@ These technologies work together smoothly to produce a decentralised application
 - Git (v2.38 or higher)
 - Install an Ethereum wallet that works with it (like MetaMask), and make sure the account has enough money in it to run smart contracts and use the app.
 
-## How to RentPay dApp
+## How to Build RentPay dApp
 
+
+
+### Front-end framework
+
+![Celo Composer select framework](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_1.png?raw=true)
+
+### Web3 library (for react-app)
+
+![Celo Composer select framework](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_2.png?raw=true)
+
+### Smart contract framework
+
+![Celo Composer tool selection](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_3.png?raw=true)
+
+### Subgraph
+
+![Celo Composer subgraph support](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_4.png?raw=true)
+
+### Name your dApp
+
+![Celo Composer dApp name](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_5.png?raw=true)
+
+**_🔥Voila, you have a dApp ready to go. Voila, you have a dApp ready to go. Start building your dApp on Celo._**
+
+### Getting started
  Clone the Repository:
 
 - Make sure your computer has both Node.js and npm (Node Package Manager) installed. The official Node.js website has them available for download and installation.
@@ -180,36 +205,8 @@ Start the Next.js server to launch the development server and host the RentPay f
 
 11. Documentation and Support:Document the deployment process, application features, and troubleshooting steps for future reference. Provide adequate support and resources to users for onboarding and using the RentPay dApp effectively.
 
+
 By following these instructions, you can successfully deploy, test, and interact with the RentPay decentralized application, providing users with a seamless and secure platform for managing their rent and utilities payments.
-
-
-
-### Front-end framework
-
-![Celo Composer select framework](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_1.png?raw=true)
-
-### Web3 library (for react-app)
-
-![Celo Composer select framework](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_2.png?raw=true)
-
-### Smart contract framework
-
-![Celo Composer tool selection](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_3.png?raw=true)
-
-### Subgraph
-
-![Celo Composer subgraph support](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_4.png?raw=true)
-
-### Name your dApp
-
-![Celo Composer dApp name](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_5.png?raw=true)
-
-**_🔥Voila, you have a dApp ready to go. Voila, you have a dApp ready to go. Start building your dApp on Celo._**
-
-### Getting started
-
-Once your custom dApp has been created, just install dependencies, either with `yarn` or `npm i`, and run the respective script from the `package.json` file.
-## Supported Frameworks
 
 ### React
 
