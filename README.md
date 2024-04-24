@@ -203,7 +203,9 @@ By following these steps and maintaining a collaborative and iterative developme
 ### Rentpay dApp
 
 [picture]
-
+https://github.com/Amity808/rentpay/blob/main/rentpay-dapp/public/celo-removebg-preview.png
+[https://github.com/Amity808/rentpay/blob/main/rentpay-dapp/public/tag-removebg-preview.png]
+https://github.com/Amity808/rentpay/blob/main/rentpay-dapp/public/roberton.jpg
 
 ### Getting started
 
