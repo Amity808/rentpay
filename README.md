@@ -180,9 +180,6 @@ By following these steps and maintaining a collaborative and iterative developme
 - [Viem](https://viem.sh/): Utilised to control Ethereum interactions within the application and wallet connections. Viem provides tools for managing Ethereum addresses, approving trades, and getting blockchain information.
 - [Rainbowkit-celo](https://github.com/celo-org/rainbowkit-celo): Employed in the creation of UI components. In order to expedite development and guarantee consistency in design, Rainbowkit offers a set of pre-designed components that are readily integrated into the application.
 
-![Celo Composer select framework](https://github.com/celo-org/celo-composer/blob/main/images/readme/cc_step_1.png?raw=true)
-
-
 ### Web3 library (for react-app)
 
 - [Ethers.js](https://docs.ethers.org/v6/): Utilised to communicate with the Ethereum network. A JavaScript package called ethers.js offers APIs for communicating with smart contracts, sending transactions, and retrieving blockchain data.
@@ -202,11 +199,11 @@ By following these steps and maintaining a collaborative and iterative developme
 
 ### Rentpay dApp
 
-[Rentpay](https://github.com/Amity808/rentpay/blob/main/rentpay-dapp/public/celo-removebg-preview.png)
+![Rentpay](https://github.com/Amity808/rentpay/blob/main/rentpay-dapp/public/celo-removebg-preview.png)
 
-[Rentpay](https://github.com/Amity808/rentpay/blob/main/rentpay-dapp/public/tag-removebg-preview.png)
+![Rentpay](https://github.com/Amity808/rentpay/blob/main/rentpay-dapp/public/tag-removebg-preview.png)
 
-[Rentpay](https://github.com/Amity808/rentpay/blob/main/rentpay-dapp/public/roberton.jpg)
+![Rentpay](https://github.com/Amity808/rentpay/blob/main/rentpay-dapp/public/roberton.jpg)
 
 ### Getting started
 
