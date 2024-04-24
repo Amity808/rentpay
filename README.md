@@ -53,8 +53,7 @@
 
 ## About The Project
 
-Celo Composer allows you to quickly build, deploy, and iterate on decentralized applications using Celo. It provides a number of frameworks, examples, and Celo specific functionality to help you get started with your next dApp.
-
+RentPay transforms African rental markets by easing upfront annual rent burdens with secure MiniPay transactions and budget-friendly saving tools. #DigitalRenting #FinancialInclusion
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Built With
@@ -65,11 +64,12 @@ Celo Composer is built on Celo to make it simple to build dApps using a variety 
 - [Solidity](https://docs.soliditylang.org/en/v0.8.19/)
 - [Next.js](https://nextjs.org/)
 - [React.js](https://reactjs.org/)
-- [Material UI](https://mui.com/)
-- [React Native](https://reactnative.dev/)
-- [Flutter](https://docs.flutter.dev/)
-- [React-celo](https://github.com/celo-org/react-celo/)
+- [Tailwind CSS](https://v2.tailwindcss.com/docs)
+- [Hardhat](https://hardhat.org/hardhat-runner/docs/config)
+- [Viem](https://viem.sh/))
+- [Ethers.js](https://docs.ethers.org/v6/)
 - [Rainbowkit-celo](https://github.com/celo-org/rainbowkit-celo)
+- [TypeChain](https://www.npmjs.com/package/typechain)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
