@@ -99,6 +99,22 @@ We encourage financial responsibility and transparency by providing tenants with
 To give tenants a simple, safe, and comprehensive way to handle their rent and utilities, RentPay is designed as a decentralized application (dApp) that makes use of a number of 
 different technologies. Among the major technologies employed in this project are:
 
+- Next.js
+- React
+- Tailwind CSS
+- Rainbowkit
+- Headless UI
+- Heroicons
+- TanStack React Query
+- Wagmi
+- Viem
+- Solidity
+- TypeScript
+- Hardhat
+- Ethers.js
+- Typechain
+- TypeScript
+- 
 These technologies work together smoothly to produce a decentralised application that is reliable and effective and satisfies RentPay users' needs.
 
 
