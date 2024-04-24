@@ -218,7 +218,10 @@ Navigate to the project directory and install the necessary dependencies for bot
 `MNEMONIC="<your_wallet_mnemonic>"`
 `PRIVATE_KEY="<your_private_key>"`
 `CELOSCAN_API_KEY="<your_celoscan_api_key>"`
-Replace `<your_wallet_mnemonic>`, `<your_private_key>`, and `<your_celoscan_api_key>` with your actual values. You can refer to the provided `.env.example` file for guidance.
+
+Replace `<your_wallet_mnemonic>`, 
+`<your_private_key>`, and `<your_celoscan_api_key>` 
+with your actual values. You can refer to the provided `.env.example` file for guidance.
 
 
 4. Compile Smart Contracts:
@@ -246,7 +249,8 @@ Verify that the deployment process completes without errors and note the contrac
 Start the `Next.js server` to launch the development server and host the RentPay frontend application locally. Access the application by navigating to http://localhost:3000 in your web browser.
 
 
-7. Interact with the Application:Use the RentPay dApp to manage rent and utilities payments, configure autosave options, lock funds for budgeting, and receive contributions from external sources. Ensure that you have a compatible Ethereum wallet connected to the application for transactions and interactions with the blockchain.
+7. Interact with the Application:
+Use the RentPay dApp to manage rent and utilities payments, configure autosave options, lock funds for budgeting, and receive contributions from external sources. Ensure that you have a compatible Ethereum wallet connected to the application for transactions and interactions with the blockchain.
 
 
 8. Test Functionality:Test various features and functionalities of the RentPay application, including making payments, locking funds, configuring autosave settings, and withdrawing contributions. Verify that transactions are executed correctly and that balances are updated accordingly.
