@@ -58,18 +58,22 @@ RentPay transforms African rental markets by easing upfront annual rent burdens 
 
 ## Built With
 
-Celo Composer is built on Celo to make it simple to build dApps using a variety of front-end frameworks, and libraries.
+To give tenants a simple, safe, and comprehensive way to handle their rent and utilities, RentPay is designed as a decentralized application (dApp) that makes use of a number of 
+different technologies. Among the major technologies employed in this project are:
 
+- [Next.js](https://nextjs.org/): utilised as the front-end foundation for creating the application's user interface. Server-side rendering, routing, and other functionality are provided by Next.js, which improves the application's performance and user experience.
 - [Celo](https://celo.org/)
-- [Solidity](https://docs.soliditylang.org/en/v0.8.19/)
-- [Next.js](https://nextjs.org/)
-- [React.js](https://reactjs.org/)
-- [Tailwind CSS](https://v2.tailwindcss.com/docs)
-- [Hardhat](https://hardhat.org/hardhat-runner/docs/config)
-- [Viem](https://viem.sh/))
-- [Ethers.js](https://docs.ethers.org/v6/)
-- [Rainbowkit-celo](https://github.com/celo-org/rainbowkit-celo)
-- [TypeChain](https://www.npmjs.com/package/typechain)
+- [Solidity](https://docs.soliditylang.org/en/v0.8.19/): Usedd for writing our smart contract
+- [React.js](https://reactjs.org/): Front end library which our Next.js app is going to be built on
+- [Tailwind CSS](https://v2.tailwindcss.com/docs): Used in the styling of the UI components. Tailwind CSS is a utility-first approach to CSS that makes it possible to quickly design and modify user interface elements.
+- [Hardhat](https://hardhat.org/hardhat-runner/docs/config): Selected as the platform for development where smart contracts are assembled, tested, and implemented. For Ethereum development, Hardhat provides an extensive toolkit with integrated testing and debugging help.
+- [Viem](https://viem.sh/): Utilised to control Ethereum interactions within the application and wallet connections. Viem provides tools for managing Ethereum addresses, approving trades, and getting blockchain information.
+- [Ethers.js](https://docs.ethers.org/v6/): Utilised to communicate with the Ethereum network. A JavaScript package called ethers.js offers APIs for communicating with smart contracts, sending transactions, and retrieving blockchain data.
+- [Rainbowkit-celo](https://github.com/celo-org/rainbowkit-celo): Employed in the creation of UI components. In order to expedite development and guarantee consistency in design, Rainbowkit offers a set of pre-designed components that are readily integrated into the application.
+- [TypeChain](https://www.npmjs.com/package/typechain): Generated TypeScript bindings for Ethereum smart contracts using this. In TypeScript projects, TypeChain helps to maintain type safety and offers auto-generated typings for interfacing with smart contracts.
+  
+These technologies work together smoothly to produce a decentralised application that is reliable and effective and satisfies RentPay users' needs.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -77,8 +81,9 @@ Celo Composer is built on Celo to make it simple to build dApps using a variety 
 
 ## Prerequisites
 
-- Node
+- Node: Make sure your computer has both Node.js and npm (Node Package Manager) installed. The official Node.js website has them available for download and installation.
 - Git (v2.38 or higher)
+- Install an Ethereum wallet that works with it (like MetaMask), and make sure the account has enough money in it to run smart contracts and use the app.
 
 ## How to use Celo Composer
 
