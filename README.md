@@ -172,7 +172,20 @@ Join the Celo Discord server at <https://chat.celo.org>. Reach out on the dedica
 
 ## Roadmap
 
-See the [open issues](https://github.com/celo-org/celo-composer/issues) for a full list of proposed features (and known issues).
+Moving forward, the roadmap for RentPay includes:
+
+Enhanced User Features:
+introducing new features and updating the UI to improve usability and functionality (transaction history, notifications, account management, etc.).
+
+Scalability and Performance:
+Exploring solutions for optimizing performance and scalability, including layer 2 scaling solutions, gas fee optimizations, and network upgrades.
+Security Enhancements:
+To reduce security risks and safeguard user assets, new security measures should be put in place, audits should be carried out often, and best practices should be followed.
+
+Community Engagement:
+Establishing a vibrant community around RentPay through initiatives for adoption, instruction, and rewards in order to get input for future enhancements.
+Through tackling these obstacles and adhering to the plan, RentPay hopes to establish itself as a preeminent decentralized platform for managing rent and utilities, offering users all around the world financial inclusion and empowerment.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
