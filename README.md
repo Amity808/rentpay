@@ -134,29 +134,40 @@ Development Process Overview:
 
 Our development process followed an iterative and collaborative approach, focusing on building, testing, and refining the application to meet the project objectives. Below is a detailed outline of the key steps involved:
 
-Project Planning and Requirements Gathering:
+1. Project Planning and Requirements Gathering:
 The development process began with comprehensive planning and requirements gathering. We defined the project scope, identified key features, and outlined user stories to guide development.
-Technology Stack Selection:
+
+2. Technology Stack Selection:
 Based on the project requirements and objectives, we selected the appropriate technology stack for frontend, backend, smart contract development, and blockchain integration. This involved evaluating frameworks, libraries, and tools that best suited our needs.
-Setting Up the Development Environment:
+
+3. Setting Up the Development Environment:
 Each team member set up their development environment according to the chosen technology stack. This included installing necessary software, configuring development tools, and ensuring compatibility with project dependencies.
-Frontend Development:
+ 
+4. Frontend Development:
 Frontend development commenced with designing the user interface (UI) and user experience (UX) components using tools like Figma or Adobe XD. Once the designs were finalized, frontend developers began implementing the UI/UX using Next.js, React, and other frontend technologies.
-Backend Development:
+
+5. Backend Development:
 Simultaneously, backend developers worked on designing and implementing the server-side logic using Node.js, Express.js, and other relevant frameworks. This involved creating APIs, handling authentication, and integrating with external services as needed.
-Smart Contract Development:
+
+6. Smart Contract Development:
 Smart contract development involved writing Solidity code for the RentPay contract, which manages rent and utilities payments on the Celo blockchain. Developers used tools like Hardhat for local development, testing, and deploying smart contracts to the Celo testnet or mainnet.
-Integration with MiniPay:
+
+7. Integration with MiniPay:
 Integrating with MiniPay required integrating Web3.js, Ethers.js, or similar libraries to interact with the Celo blockchain. This involved configuring connections to the Celo network, handling wallet interactions, and implementing transaction functionalities.
-Testing:
+
+8. Testing:
 Throughout the development process, rigorous testing was conducted to ensure the reliability, security, and performance of the application. This included unit testing, integration testing, and end-to-end testing of frontend, backend, and smart contract components.
-Deployment and Optimization:
+
+9. Deployment and Optimization:
 Once development and testing were complete, the application was deployed to production environments. This involved optimizing code, configuring servers, and setting up continuous integration/continuous deployment (CI/CD) pipelines to automate deployment processes.
-Monitoring and Maintenance:
+
+10. Monitoring and Maintenance:
 Post-deployment, the application was monitored for performance, security, and user feedback. Any issues or bugs identified were addressed promptly through regular maintenance and updates.
-Documentation and Knowledge Sharing:
+
+11. Documentation and Knowledge Sharing:
 Comprehensive documentation was prepared covering various aspects of the application, including setup instructions, usage guidelines, API documentation, and troubleshooting steps. Knowledge sharing sessions were conducted to onboard team members and stakeholders.
-User Training and Support:
+
+12. User Training and Support:
 Finally, user training sessions were conducted to familiarize users with the application features and functionalities. Ongoing support was provided to address user queries, resolve issues, and gather feedback for future enhancements.
 By following these steps and maintaining a collaborative and iterative development process, we successfully delivered a robust and user-friendly application that meets the project objectives and fulfills the needs of our users.
 
