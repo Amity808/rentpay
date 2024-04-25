@@ -1,37 +1,78 @@
-import { useEffect, useState } from "react";
 import { useAccount } from "wagmi";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Image from 'next/image';
+import React from "react";
+import { render } from "react-dom";
+import Carousel from "./carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+
+
 
 export default function Home() {
-  const [userAddress, setUserAddress] = useState("");
-  const [isMounted, setIsMounted] = useState(false);
-  const { address, isConnected } = useAccount();
+  const { isConnected, isConnecting } = useAccount();
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  if (!isConnected)
+    return (
+      <div className="flex gap-5 text-center min-h-screen flex-col items-center justify-between ">
+        <div>
+          <div className="text-4xl">
+          <p >
+           Making living 
+          </p>
+          <div>
+          <p >
+           simpler!
+          </p>
+          </div>
+          
+          </div>
+         
+          <div className=" mt-5 items-center justify-center flex ">
+           
+                <Image
+            src="/tag-removebg-preview.png"
+            width={100}
+            height={100}
+            alt="logo"
+          />
+                  
+                </div>
+          <div className="flex justify-center items-center mt-5  ">
+            <ConnectButton />
+          </div>
 
-  useEffect(() => {
-    if (isConnected && address) {
-      setUserAddress(address);
-    }
-  }, [address, isConnected]);
-
-  if (!isMounted) {
-    return null;
-  }
+          <p className="text-4xl mt-5 ">
+           Powered by
+          </p>
+          <div className="items-center justify-center flex mt-5  ">
+                <Image
+            src="/celo-removebg-preview.png"
+            width={200}
+            height={200}
+            alt="logo"
+          />
+                  
+                </div>
+        </div>
+      </div>
+    );
 
   return (
      
 
       <div className="flex flex-col justify-center items-center">
 
+       
+
+
+
+
 <div className="bg-white rounded-lg shadow-md overflow-hidden">
       {/* House Image */}
-      <img
-        src="/house-image.jpg"
-        alt="House"
-        className="w-full h-64 object-cover"
-      />
+      <div>
+      <Carousel  />
+      </div>
+      
       {/* House Details */}
       <div className="p-4">
         <h2 className="text-xl font-semibold text-gray-800 mb-2">
@@ -99,3 +140,5 @@ export default function Home() {
     
   );
 }
+
+
